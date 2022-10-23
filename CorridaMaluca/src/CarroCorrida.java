@@ -17,7 +17,8 @@ public class CarroCorrida {
     public boolean ligar() {
         return ligado;
     }
-
+    
+    //Como tanto acelerar quanto frear só funcionam com o carro ligado, caso o carro esteja desligado, acrescentei ligar aos dois métodos.
     public float acelerar(float aceleracao) {
         if (!ligado) {
             ligar();
