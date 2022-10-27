@@ -1,10 +1,10 @@
 public class Piloto {
     private String nome;
     private Integer idade;
-    private Enum Genero;
+    private Genero Genero;
     private final String equipe;
 
-    public Piloto(String nome, Integer idade, Enum Genero, String equipe) {
+    public Piloto(String nome, Integer idade, Genero Genero, String equipe) {
         this.nome = nome;
         this.idade = idade;
         this.Genero = Genero;
@@ -29,16 +29,16 @@ public class Piloto {
         return idade;
     }
 
-    public Enum setGenero(Enum Genero) {
+    public Genero setGenero(Genero Genero) {
         this.Genero = Genero;
         return Genero;
     }
 
-    public Enum getGenero() {
+    public Genero getGenero() {
         return Genero;
     }
 
-    public void trocarPiloto(String novoPiloto, Integer novoPilotoIdade, Enum novoGenero) {
+    public void trocarPiloto(String novoPiloto, Integer novoPilotoIdade, Genero novoGenero) {
         this.setNome(novoPiloto);
         this.setIdade(novoPilotoIdade);
         this.setGenero(novoGenero);
